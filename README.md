@@ -13,6 +13,9 @@ Please also file any issues you find using the project's [Issue tracker](https:/
 
 ## Release Notes
 
+#### 2016-05-12 Release 3.3.0 /Marcin Bojko/
+* Switch to 3.0.0 branch
+
 #### 2015-03-22 Release 2.4.4
 * Moved config file from `$env:ProgramFiles\Zabbix Agent` to `$env:ProgramData\zabbix`
 * Reworked `.nuspec` file to adhere to Chocolatey standards
