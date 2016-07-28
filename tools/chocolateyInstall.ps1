@@ -3,10 +3,10 @@ param(
 [string]$serverpassive
 )
 
-$version      = '3.0.0'
+$version      = '3.0.3.1'
 $id           = 'zabbix-agent'
 $title        = 'Zabbix Agent'
-$url          = "http://www.zabbix.com/downloads/$version/zabbix_agents_$version.win.zip"
+$url          = "https://dl.dropboxusercontent.com/u/6066664/choco/zabbix-agent/zabbix_agents_3.0.3.1.win.zip"
 $url64        = $url
 
 $configDir    = Join-Path $env:PROGRAMDATA 'zabbix'
@@ -15,7 +15,7 @@ $zabbixConf   = Join-Path $configDir 'zabbix_agentd.conf'
 $installDir   = Join-Path $env:PROGRAMFILES $title
 $zabbixAgentd = Join-Path $installDir 'zabbix_agentd.exe'
 
-$tempDir      = Join-Path $env:TEMP 'chocolatey\zabbix'
+$tempDir      = Join-Path $env:TEMP 'zabbix'
 
 $zipFile      = Join-Path $tempDir "zabbix_agents_$version.win.zip"
 $sampleConfig = Join-Path $tempDir 'conf\zabbix_agentd.win.conf'

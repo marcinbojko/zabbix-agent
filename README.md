@@ -13,7 +13,11 @@ Please also file any issues you find using the project's [Issue tracker](https:/
 
 ## Release Notes
 
-#### 2016-05-12 Release 3.3.0 /Marcin Bojko/
+#### 2016-07-26 Release 3.0.3.1
+* switched to binary from http://www.suiviperf.com/zabbix/
+* repacked from source to *.zip
+
+#### 2016-05-12 Release 3.0.0 /Marcin Bojko/
 * Switch to 3.0.0 branch
 
 #### 2015-03-22 Release 2.4.4

@@ -3,7 +3,7 @@
   <metadata>
     <id>zabbix-agent3</id>
     <title>Zabbix Agent</title>
-    <version>3.0.0</version>
+    <version>3.0.3.1</version>
     <authors>Gene Liverman</authors>
     <owners>Gene Liverman</owners>
     <description>
