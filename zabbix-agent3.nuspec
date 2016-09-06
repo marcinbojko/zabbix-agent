@@ -25,6 +25,16 @@ Please also file any issues you find using the project's [Issue tracker](https:/
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/genebean/zabbix-agent-chocolatey/2.4.4/logo/zabbix_logo_500x131.png</iconUrl>
     <releaseNotes>
+#### 2016-09-06 Release 3.0.4.0
+* version change
+
+#### 2016-07-26 Release 3.0.3.1
+* switched to binary from http://www.suiviperf.com/zabbix/
+* repacked from source to *.zip
+
+#### 2016-05-12 Release 3.0.0 /Marcin Bojko/
+* Switch to 3.0.0 branch
+      
 #### 2015-03-22 Release 2.4.4
 * Moved config file from `$env:ProgramFiles\Zabbix Agent` to `$env:ProgramData\zabbix`
 * Reworked `.nuspec` file to adhere to Chocolatey standards
