@@ -13,6 +13,9 @@ Please also file any issues you find using the project's [Issue tracker](https:/
 
 ## Release Notes
 
+#### 2016-09-06 Release 3.0.4.0
+* version change
+
 #### 2016-07-26 Release 3.0.3.1
 * switched to binary from http://www.suiviperf.com/zabbix/
 * repacked from source to *.zip

@@ -3,10 +3,10 @@ param(
 [string]$serverpassive
 )
 
-$version      = '3.0.3.1'
+$version      = '3.0.4.0'
 $id           = 'zabbix-agent'
 $title        = 'Zabbix Agent'
-$url          = "https://dl.dropboxusercontent.com/u/6066664/choco/zabbix-agent/zabbix_agents_3.0.3.1.win.zip"
+$url          = "https://dl.dropboxusercontent.com/u/6066664/choco/zabbix-agent/zabbix_agents_3.0.4.0.win.zip"
 $url64        = $url
 
 $configDir    = Join-Path $env:PROGRAMDATA 'zabbix'
