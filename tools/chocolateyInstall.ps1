@@ -3,11 +3,13 @@ param(
 [string]$serverpassive
 )
 
-$version      = '3.0.4.0'
+$version      = '3.2.0'
 $id           = 'zabbix-agent'
 $title        = 'Zabbix Agent'
-$url          = "https://dl.dropboxusercontent.com/u/6066664/choco/zabbix-agent/zabbix_agents_3.0.4.0.win.zip"
+$url          = "https://dl.dropboxusercontent.com/u/6066664/choco/zabbix-agent/zabbix_agents_3.2.0.win.zip"
 $url64        = $url
+$checksum     = 'f5a51b5c49192afdae65447ada515768'
+
 
 $configDir    = Join-Path $env:PROGRAMDATA 'zabbix'
 $zabbixConf   = Join-Path $configDir 'zabbix_agentd.conf'
@@ -43,7 +45,20 @@ try {
     New-Item $tempDir -type directory
   }
 
-  Get-ChocolateyWebFile "$id" "$zipFile" "$url" "$url64"
+$packageArgs = @{
+  packageName    = $id
+  fileFullPath   = $zipFile
+  url            = $url
+  url64bit       = $url
+  checksum       = $checksum
+  checksum64     = $checksum
+  checksumType   = 'md5'
+  checksumType64 = 'md5'
+}
+  
+ Get-ChocolateyWebFile @packageArgs
+
+ # Get-ChocolateyWebFile "$id" "$zipFile" "$url" "$url64"
   Get-ChocolateyUnzip "$zipFile" "$tempDir"
 
   if ($is64bit) {
@@ -77,20 +92,16 @@ try {
 
   
 
-
   if (!($service)) {
     Start-ChocolateyProcessAsAdmin "--config `"$zabbixConf`" --install" "$zabbixAgentd"
   }
-
-
 
   Start-Service -Name $title
 
   Install-ChocolateyPath $installDir 'Machine'
 
-  Write-ChocolateySuccess "$id"
 
 } catch {
-  Write-ChocolateyFailure "$id" "$($_.Exception.Message)"
+  
   throw
 }
