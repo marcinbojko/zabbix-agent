@@ -1,4 +1,6 @@
-# zabbix-agent-chocolatey
+# **Zabbix-agent3 for chocolatey**
+
+## Description
 
 This package installs the Zabbix agent using the pre-compiled files from [Zabbix SIA](zabbix.com).
 Executables are placed in `$env:ProgramFiles\Zabbix Agent` which is generally
@@ -11,8 +13,13 @@ files saved as `zabbix_agentd-2.4.4.conf.`
 The source for this Chocolatey package can be found on [GitHub](https://github.com/genebean/zabbix-agent-chocolatey).
 Please also file any issues you find using the project's [Issue tracker](https://github.com/genebean/zabbix-agent-chocolatey/issues).
 
-
 ## Release Notes
+
+### 2016-10-01 Release 3.2.0 rev.b
+
+* updated README.MD
+* added Virus Total check link - [https://www.virustotal.com/en/file/c34d824cb26af1a22cc5423fa748c398c1241282ab3fd4b9c6b898ff8ae2fd0b/analysis/1475138389/](https://www.virustotal.com/en/file/c34d824cb26af1a22cc5423fa748c398c1241282ab3fd4b9c6b898ff8ae2fd0b/analysis/1475138389/)
+
 
 ### 2016-09-29 Release 3.2.0
 
