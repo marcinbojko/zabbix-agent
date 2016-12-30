@@ -15,6 +15,11 @@ Please also file any issues you find using the project's [Issue tracker](https:/
 
 ## Release Notes
 
+### 2016-12-30 Release 3.2.3
+
+* updated binary to version 3.2.3
+* added Virus Total check link - 124177e00ce3fb09e1b9f9f2ece259035be3c2d66755b960f1993d932043a410 - [https://www.virustotal.com/en/file/124177e00ce3fb09e1b9f9f2ece259035be3c2d66755b960f1993d932043a410/analysis/1483079799/](https://www.virustotal.com/en/file/124177e00ce3fb09e1b9f9f2ece259035be3c2d66755b960f1993d932043a410/analysis/1483079799/)
+
 ### 2016-10-01 Release 3.2.0 rev.b
 
 * updated README.MD

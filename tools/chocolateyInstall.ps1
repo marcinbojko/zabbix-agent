@@ -3,12 +3,13 @@ param(
 [string]$serverpassive
 )
 
-$version      = '3.2.0'
+$version      = '3.2.3'
 $id           = 'zabbix-agent'
 $title        = 'Zabbix Agent'
-$url          = "https://dl.dropboxusercontent.com/u/6066664/choco/zabbix-agent/zabbix_agents_3.2.0.win.zip"
+$url          = "https://dl.dropboxusercontent.com/u/6066664/choco/zabbix-agent/zabbix_agents_3.2.3.win.zip"
 $url64        = $url
-$checksum     = 'f5a51b5c49192afdae65447ada515768'
+$checksum     = '124177e00ce3fb09e1b9f9f2ece259035be3c2d66755b960f1993d932043a410'
+$checksum64   = $checksum
 
 
 $configDir    = Join-Path $env:PROGRAMDATA 'zabbix'
@@ -52,10 +53,10 @@ $packageArgs = @{
   url64bit       = $url
   checksum       = $checksum
   checksum64     = $checksum
-  checksumType   = 'md5'
-  checksumType64 = 'md5'
+  checksumType   = 'sha256'
+  checksumType64 = 'sha256'
 }
-  
+
  Get-ChocolateyWebFile @packageArgs
 
  # Get-ChocolateyWebFile "$id" "$zipFile" "$url" "$url64"
@@ -90,8 +91,6 @@ $packageArgs = @{
 
   }
 
-  
-
   if (!($service)) {
     Start-ChocolateyProcessAsAdmin "--config `"$zabbixConf`" --install" "$zabbixAgentd"
   }
@@ -102,6 +101,6 @@ $packageArgs = @{
 
 
 } catch {
-  
+
   throw
 }
