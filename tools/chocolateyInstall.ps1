@@ -3,14 +3,14 @@ param(
 [string]$serverpassive
 )
 
-$version      = '3.2.3'
+$version      = '3.2.7'
 $id           = 'zabbix-agent'
 $title        = 'Zabbix Agent'
-$url          = "https://dl.dropboxusercontent.com/u/6066664/choco/zabbix-agent/zabbix_agents_3.2.3.win.zip"
+$scriptPath   = $PSScriptRoot
+$url          = Join-Path $scriptPath "zabbix\zabbix_agents_$version.win.zip"
+$checksum     = '7a8060ef278a59c248244a6657ee96a9226c0f003b2cfe70aedadecddb05f086'
 $url64        = $url
-$checksum     = '124177e00ce3fb09e1b9f9f2ece259035be3c2d66755b960f1993d932043a410'
 $checksum64   = $checksum
-
 
 $configDir    = Join-Path $env:PROGRAMDATA 'zabbix'
 $zabbixConf   = Join-Path $configDir 'zabbix_agentd.conf'
@@ -50,16 +50,15 @@ $packageArgs = @{
   packageName    = $id
   fileFullPath   = $zipFile
   url            = $url
-  url64bit       = $url
+  url64bit       = $url64
   checksum       = $checksum
-  checksum64     = $checksum
+  checksum64     = $checksum64
   checksumType   = 'sha256'
   checksumType64 = 'sha256'
 }
 
  Get-ChocolateyWebFile @packageArgs
 
- # Get-ChocolateyWebFile "$id" "$zipFile" "$url" "$url64"
   Get-ChocolateyUnzip "$zipFile" "$tempDir"
 
   if ($is64bit) {
