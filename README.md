@@ -15,7 +15,12 @@ Please also file any issues you find using the project's [Issue tracker](https:/
 
 ## Release Notes
 
-### 2016-09-02 Release 3.2.7
+### 2017-10-25 Release 3.4.0
+
+* updated binary to version 3.4.0
+* added Virus Total check link - [https://www.virustotal.com/#/file/be9dddb75005907b26c2159c3eeeb7f88abd007d3b220ce79d9df2f2da10be4c/detection](https://www.virustotal.com/#/file/be9dddb75005907b26c2159c3eeeb7f88abd007d3b220ce79d9df2f2da10be4c/detection)
+
+### 2017-09-02 Release 3.2.7
 
 * updated binary to version 3.2.7
 * switch to host binaries (zip) inside chocolatey package (due to Dropbox public links change)

@@ -3,12 +3,12 @@ param(
 [string]$serverpassive
 )
 
-$version      = '3.2.7'
+$version      = '3.4.0'
 $id           = 'zabbix-agent'
 $title        = 'Zabbix Agent'
 $scriptPath   = $PSScriptRoot
 $url          = Join-Path $scriptPath "zabbix\zabbix_agents_$version.win.zip"
-$checksum     = '7a8060ef278a59c248244a6657ee96a9226c0f003b2cfe70aedadecddb05f086'
+$checksum     = 'be9dddb75005907b26c2159c3eeeb7f88abd007d3b220ce79d9df2f2da10be4c'
 $url64        = $url
 $checksum64   = $checksum
 
