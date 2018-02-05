@@ -3,12 +3,12 @@ param(
 [string]$serverpassive
 )
 
-$version      = '3.4.0'
+$version      = '3.4.6'
 $id           = 'zabbix-agent'
 $title        = 'Zabbix Agent'
 $scriptPath   = $PSScriptRoot
 $url          = Join-Path $scriptPath "zabbix\zabbix_agents_$version.win.zip"
-$checksum     = 'be9dddb75005907b26c2159c3eeeb7f88abd007d3b220ce79d9df2f2da10be4c'
+$checksum     = 'cf0ba8ff4daf9f11006b032d096117fddcd8a90e2e08f5af6ec327bb038a1896'
 $url64        = $url
 $checksum64   = $checksum
 
@@ -21,7 +21,7 @@ $zabbixAgentd = Join-Path $installDir 'zabbix_agentd.exe'
 $tempDir      = Join-Path $env:TEMP 'zabbix'
 
 $zipFile      = Join-Path $tempDir "zabbix_agents_$version.win.zip"
-$sampleConfig = Join-Path $tempDir 'conf\zabbix_agentd.win.conf'
+  $sampleConfig = Join-Path $tempDir 'conf\zabbix_agentd.win.conf'
 $binFiles     = @('zabbix_agentd.exe', 'zabbix_get.exe', 'zabbix_sender.exe')
 
 

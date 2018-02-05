@@ -15,6 +15,10 @@ Please also file any issues you find using the project's [Issue tracker](https:/
 
 ## Release Notes
 
+### 2018-02-05 Release 3.4.6
+
+* updated binary to version 3.4.6
+
 ### 2017-10-25 Release 3.4.0
 
 * updated binary to version 3.4.0

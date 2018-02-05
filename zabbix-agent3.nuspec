@@ -3,7 +3,7 @@
   <metadata>
     <id>zabbix-agent3</id>
     <title>Zabbix Agent</title>
-    <version>3.4.0</version>
+    <version>3.4.6</version>
     <authors>Gene Liverman, Marcin Bojko</authors>
     <owners>Gene Liverman, Marcin Bojko</owners>
     <description>
@@ -25,6 +25,10 @@ Please also file any issues you find using the project's [Issue tracker](https:/
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/genebean/zabbix-agent-chocolatey/2.4.4/logo/zabbix_logo_500x131.png</iconUrl>
     <releaseNotes>
+### 2018-02-05 Release 3.4.6
+
+* updated binary to version 3.4.6
+
 ### 2017-10-25 Release 3.4.0
 
 * updated binary to version 3.4.0
