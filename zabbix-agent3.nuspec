@@ -3,7 +3,7 @@
   <metadata>
     <id>zabbix-agent3</id>
     <title>Zabbix Agent</title>
-    <version>3.4.6</version>
+    <version>3.4.9</version>
     <authors>Gene Liverman, Marcin Bojko</authors>
     <owners>Gene Liverman, Marcin Bojko</owners>
     <description>
@@ -23,8 +23,13 @@ Please also file any issues you find using the project's [Issue tracker](https:/
     <copyright>GPL v2</copyright>
     <licenseUrl>http://www.zabbix.com/license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/genebean/zabbix-agent-chocolatey/2.4.4/logo/zabbix_logo_500x131.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/marcinbojko/zabbix-agent/master/logo/zabbix_logo_500x131.png</iconUrl>
     <releaseNotes>
+### 2018-07-03 Release 3.4.9
+
+* updated binary to version 3.4.9
+* VirusTotal - [https://www.virustotal.com/#/file/a13ebddefb7c13b777fa169a264d39cae6072d484fc13eafb887843d8fce4aa3/detection](https://www.virustotal.com/#/file/a13ebddefb7c13b777fa169a264d39cae6072d484fc13eafb887843d8fce4aa3/detection)
+
 ### 2018-02-05 Release 3.4.6
 
 * updated binary to version 3.4.6
@@ -45,11 +50,10 @@ Please also file any issues you find using the project's [Issue tracker](https:/
 * updated binary to version 3.2.3
 * added Virus Total check link - 124177e00ce3fb09e1b9f9f2ece259035be3c2d66755b960f1993d932043a410 - [https://www.virustotal.com/en/file/124177e00ce3fb09e1b9f9f2ece259035be3c2d66755b960f1993d932043a410/analysis/1483079799/](https://www.virustotal.com/en/file/124177e00ce3fb09e1b9f9f2ece259035be3c2d66755b960f1993d932043a410/analysis/1483079799/)
 
-### 2016-10-01 Release 3.2.0 rev.be
+### 2016-10-01 Release 3.2.0 rev.b
 
 * updated README.MD
 * added Virus Total check link - [https://www.virustotal.com/en/file/c34d824cb26af1a22cc5423fa748c398c1241282ab3fd4b9c6b898ff8ae2fd0b/analysis/1475138389/](https://www.virustotal.com/en/file/c34d824cb26af1a22cc5423fa748c398c1241282ab3fd4b9c6b898ff8ae2fd0b/analysis/1475138389/)
-
 
 ### 2016-09-29 Release 3.2.0
 
