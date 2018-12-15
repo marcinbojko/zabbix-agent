@@ -10,10 +10,16 @@ is not overwritten but rather the version number of the new file is appended to 
 if version 2.2.1 is installed and then upgraded to version 2.4.4 you will find the sample 2.4.4 config
 files saved as `zabbix_agentd-2.4.4.conf.`
 
-The source for this Chocolatey package can be found on [GitHub](https://github.com/genebean/zabbix-agent-chocolatey).
-Please also file any issues you find using the project's [Issue tracker](https://github.com/genebean/zabbix-agent-chocolatey/issues).
+Repository
+
+* [https://github.com/marcinbojko/zabbix-agent](https://github.com/marcinbojko/zabbix-agent)
 
 ## Release Notes
+
+### 2018-12-15 Release 4.0.0
+
+* updated binary to version 4.0.0
+* VirusTotal - [https://www.virustotal.com/#/file/36560559f15f712f5b297c6abfec16922215690aff87ec9a5f3d96397a46efdd/detection](https://www.virustotal.com/#/file/36560559f15f712f5b297c6abfec16922215690aff87ec9a5f3d96397a46efdd/detection)
 
 ### 2018-07-03 Release 3.4.9
 
@@ -72,3 +78,14 @@ Please also file any issues you find using the project's [Issue tracker](https:/
   errors or fail
 * Made syntax more consistent throughout scripts. For example, changed to use `Join-Path` everywhere
   instead of just in some place.
+
+## ToDo
+
+* add OpenSSL supported versions
+* remove 32bit version
+* package name change to mirror major version
+
+## Original release
+
+The source for this Chocolatey package can be found on [GitHub](https://github.com/genebean/zabbix-agent-chocolatey).
+Please also file any issues you find using the project's [Issue tracker](https://github.com/genebean/zabbix-agent-chocolatey/issues).
